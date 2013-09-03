@@ -11,7 +11,8 @@
       var mySwiper = $('.swiper-container').swiper({
         //Your options here:
         mode:'horizontal',
-        loop: true
+        loop: true,
+        autoplay: 2000
         //etc..
       });
     })
@@ -44,19 +45,12 @@ font-family: Arial, 'Microsoft YaHei';
         background-color: orange;
         margin-top:15px;
     }
-    .swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
+.swiper-slide{
+    height: 350px;
+    margin:auto;
 }
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
+.swiper-slide img{
+    width:100%;
 }
 
 </style>
@@ -76,17 +70,17 @@ font-family: Arial, 'Microsoft YaHei';
   <div class="swiper-wrapper">
       <!--First Slide-->
       <div class="swiper-slide"> 
-        ss
+        <img src="http://localhost/fuck/static/1.jpg"/>
       </div>
       
       <!--Second Slide-->
       <div class="swiper-slide">
-        sdfsdf
+        <img src="http://localhost/fuck/static/2.jpg"/>
       </div>
       
       <!--Third Slide-->
       <div class="swiper-slide"> 
-        sdfsdfsdf
+        <img src="http://localhost/fuck/static/3.jpg"/>
       </div>
       <!--Etc..-->
   </div>
